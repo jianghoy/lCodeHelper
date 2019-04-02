@@ -115,7 +115,9 @@ public class TreeNode {
 
         public PreOrderIterator(TreeNode root) {
           stack = new ArrayDeque<>();
-          stack.addFirst(root);
+          if (root != null) {
+              stack.addFirst(root);
+          }
         }
 
         @Override
