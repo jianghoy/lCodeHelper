@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class TreeNode {
     public int key;
@@ -7,6 +6,16 @@ public class TreeNode {
     public TreeNode right;
     public TreeNode(int key) {
       this.key = key;
+    }
+
+    public static void main(String[] args) {
+        TreeNode root = new TreeNode(0);
+        root = root.build("[5,3,8,1,4,null,11]");
+        List<Integer> solution = new ArrayList<>();
+        for (Iterator<TreeNode> itr = root.preOrderIterator(); itr.hasNext();) {
+            solution.add(itr.next().key);
+        }
+        System.out.println(solution);
     }
 
     public TreeNode build(String string){
@@ -17,7 +26,13 @@ public class TreeNode {
         catch (Exception e) {
             e.printStackTrace();
         }
+        return null;
     }
+
+    public Iterator<TreeNode> preOrderIterator() {
+        return new PreOrderIterator(this);
+    }
+
 
     /**
      * @Author: Jianghong Ying
@@ -93,6 +108,36 @@ public class TreeNode {
             return tree.get(0);
         }
 
+    }
+
+    private class PreOrderIterator implements Iterator<TreeNode> {
+        Deque<TreeNode> stack;
+
+        public PreOrderIterator(TreeNode root) {
+          stack = new ArrayDeque<>();
+          stack.addFirst(root);
+        }
+
+        @Override
+        public boolean hasNext() {
+            return !stack.isEmpty();
+        }
+
+        @Override
+        public TreeNode next() {
+            if (this.hasNext()) {
+                TreeNode cur = stack.removeFirst();
+                if (cur.right != null) {
+                    stack.addFirst(cur.right);
+                }
+                if (cur.left != null) {
+                    stack.addFirst(cur.left);
+                }
+                return cur;
+
+            }
+            return null;
+        }
     }
 
 }
