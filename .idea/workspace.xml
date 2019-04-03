@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13c86d6e-ee1f-4a99-a94e-a5ff5f3a9dc8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/out/production/lCodeHelper/TestTreeNode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TestTreeNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lCodeHelper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lCodeHelper.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lCodeHelper/TreeNode$PreOrderIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lCodeHelper/TreeNode$PreOrderIterator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lCodeHelper/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lCodeHelper/TreeNode.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,13 +21,25 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TreeNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="52" column="51" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="51" />
+            <state relative-caret-position="704">
+              <caret line="70" column="27" lean-forward="true" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
               <folding>
                 <element signature="e#125#126#0" expanded="true" />
                 <element signature="e#153#154#0" expanded="true" />
                 <element signature="e#896#897#0" expanded="true" />
                 <element signature="e#3681#3682#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TestTreeNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="49" lean-forward="true" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -44,6 +60,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/TestTreeNode.java" />
         <option value="$PROJECT_DIR$/src/TreeNode.java" />
       </list>
     </option>
@@ -84,6 +101,20 @@
               <item name="production" type="462c0819:PsiDirectoryNode" />
               <item name="lCodeHelper" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="lCodeHelper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lCodeHelper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lCodeHelper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="lCodeHelper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="JUnit5.3" type="70bed36:NamedLibraryElementNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -92,7 +123,11 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554320306588" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554323272382" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -106,7 +141,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.TestTreeNode">
     <configuration name="TreeNode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TreeNode" />
       <module name="lCodeHelper" />
@@ -114,8 +149,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestTreeNode" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="lCodeHelper" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestTreeNode" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestTreeNode.testStringToList" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="lCodeHelper" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestTreeNode" />
+      <option name="METHOD_NAME" value="testStringToList" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestTreeNode" />
+        <item itemvalue="TestNG.TestTreeNode.testStringToList" />
         <item itemvalue="Application.TreeNode" />
       </list>
     </recent_temporary>
@@ -133,6 +192,14 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="TestTreeNode_testStringToList - 2019.04.03 at 16h 18m 01s.xml">
+      <configuration name="TestTreeNode.testStringToList" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestTreeNode_testStringToList - 2019.04.03 at 16h 19m 55s.xml">
+      <configuration name="TestTreeNode.testStringToList" configurationId="TestNG" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="0" width="1292" height="1406" extended-state="0" />
     <editor active="true" />
@@ -145,12 +212,12 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" weight="0.32967034" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32967034" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32967034" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Messages" weight="0.32967034" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32967034" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32967034" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39952904" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -166,10 +233,20 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/TestTreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="49" lean-forward="true" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/TreeNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="52" column="51" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="51" />
+        <state relative-caret-position="704">
+          <caret line="70" column="27" lean-forward="true" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
           <folding>
             <element signature="e#125#126#0" expanded="true" />
             <element signature="e#153#154#0" expanded="true" />
