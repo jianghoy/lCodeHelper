@@ -50,7 +50,7 @@ public class TreeNode {
         if (string == null) {
             throw new Exception("string is null");
         }
-        String[] numbers = string.split("[\\[\\],]");
+        String[] numbers = string.split("[\\[\\],]+");
         List<Integer> solution = new ArrayList<>();
         int j = 0;
         for (int i=0;i<numbers.length;i++) {
