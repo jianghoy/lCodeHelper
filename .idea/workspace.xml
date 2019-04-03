@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="13c86d6e-ee1f-4a99-a94e-a5ff5f3a9dc8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TreeNode.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,13 +17,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TreeNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="59" column="17" lean-forward="true" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+            <state relative-caret-position="425">
+              <caret line="52" column="51" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="51" />
               <folding>
                 <element signature="e#125#126#0" expanded="true" />
                 <element signature="e#153#154#0" expanded="true" />
                 <element signature="e#896#897#0" expanded="true" />
-                <element signature="e#3680#3681#0" expanded="true" />
+                <element signature="e#3681#3682#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -91,7 +92,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554320037269" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554320306588" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -134,6 +135,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="0" width="1292" height="1406" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -166,13 +168,13 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/TreeNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="59" column="17" lean-forward="true" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+        <state relative-caret-position="425">
+          <caret line="52" column="51" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="51" />
           <folding>
             <element signature="e#125#126#0" expanded="true" />
             <element signature="e#153#154#0" expanded="true" />
             <element signature="e#896#897#0" expanded="true" />
-            <element signature="e#3680#3681#0" expanded="true" />
+            <element signature="e#3681#3682#0" expanded="true" />
           </folding>
         </state>
       </provider>
