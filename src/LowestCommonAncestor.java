@@ -3,15 +3,8 @@ public class LowestCommonAncestor {
         int count = 0;
         public TreeNode lowestCommonAncestorIII(TreeNode root,
                                                 TreeNode one, TreeNode two) {
-            // write your solution here
-            // if (root==null) return null;
-            //else if (one==null) return two;
-            //else if (two==null) return one;
-            //count=0;
-            //int[] count = new int[1];
             TreeNode sol = lca(root, one, two);
             return count >= 2 ? sol : null;
-            //return null;
         }
 
         private TreeNode lca(TreeNode root, TreeNode one, TreeNode two) {
