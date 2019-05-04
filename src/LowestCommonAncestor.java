@@ -1,6 +1,6 @@
 public class LowestCommonAncestor {
 
-        private int count = 0;
+        int count = 0;
         public TreeNode lowestCommonAncestorIII(TreeNode root,
                                                 TreeNode one, TreeNode two) {
             // write your solution here
