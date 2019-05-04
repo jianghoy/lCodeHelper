@@ -8,7 +8,7 @@ public class TestLowestCommonAncestor {
         try {
         TreeNode root = new TreeNode(0);
         String buildOrder = "8 5 3 2 1 # # # 4 # # 6 # 7 # # 13 9 # 11 # # 17 15 14 # # 16 # # #";
-        root = root.buildII(buildOrder);
+        root = root.build(buildOrder);
         LowestCommonAncestor l = new LowestCommonAncestor();
         //LowestCommonAncestor l = new LowestCommonAncestor();
         TreeNode one = new TreeNode(10);

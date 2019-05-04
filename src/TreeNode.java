@@ -10,19 +10,9 @@ public class TreeNode {
 
 
 
-    public static void main(String[] args) throws Exception {
-        /**TreeNode root = new TreeNode(0);
-        root = root.build("[5,3,8,1,4,null,11]");
-        List<Integer> solution = new ArrayList<>();
-        for (Iterator<TreeNode> itr = root.preOrderIterator(); itr.hasNext();) {
-            solution.add(itr.next().key);
-        }
-        System.out.println(solution);**/
-        TreeNode root = new TreeNode(0);
-        root = root.buildII("1 # 3 # 7");
-        System.out.println(root.buildII("8 # 9"));
-    }
-
+    /**
+     * compare the key value between two (TreeNode type) objects
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -31,15 +21,23 @@ public class TreeNode {
         return key == treeNode.key ;
     }
 
+    /**
+     * compare this tree (i.e. Tree with root as TreeNode this) with
+     * another tree (i.e. Tree with root as TreeNode node) using recursion
+     * at each node we use the equals method above (this is also the recursion
+     * rule)
+     * @param node another tree root to compare
+     * @return true if the two tree are equal; false otherwise
+     */
     public boolean treeEquals(TreeNode node){
-        if (node == null) {
+        if (!this.equals(node)) {
             return false;
         }
         boolean solution = true;
         if (this.left != null) {
-            solution = solution & this.left.treeEquals(node.left);
+            solution = this.left.treeEquals(node.left);
         }
-        if (solution == false || this.right == null) {
+        if (!solution || this.right == null) {
             return  solution;
         }
         return this.right.treeEquals(node.right);
@@ -53,20 +51,14 @@ public class TreeNode {
 
     public TreeNode build(String string){
         try {
-            List<Integer> list = stringToList(string);
-            return build(list);
+            if (string.contains("[") || string.contains("]") || string.contains(",")) {
+                return  build(stringToList(string));
+            } else {
+                return buildII(string);
+            }
         }
         catch (Exception e) {
             e.printStackTrace();
-            System.out.println("May be formatting issue: switching to mode 2");
-            try{
-                return buildII(string);
-
-            }
-            catch (Exception eII){
-                eII.printStackTrace();
-                System.out.println("Unknown error: please check the string representation or submit a issue");
-            }
         }
         return null;
     }
@@ -82,8 +74,22 @@ public class TreeNode {
      * @Email: YJianghong@gmail.com
      *
      * convert a string of integers representing Binary Tree
-     * level order traversal in Laicode style into a list of
+     * level order traversal in Laicode style 1 into a list of
      * Integers
+     * i.e.:
+     * string : "[1,2,3]"
+     * tree:
+     *     1
+     *   /  \
+     *  2    3
+     *
+     *  string : "[1,null,3,null,null,null,7]"
+     *  tree:
+     *      1
+     *       \
+     *        3
+     *         \
+     *          7
      *
      * @param string
      * @return list
@@ -109,7 +115,32 @@ public class TreeNode {
         return solution;
     }
 
-
+    /**
+     * @Author: Jianghong Ying
+     * @Date: Apr.1st, 2019
+     * @Email: YJianghong@gmail.com
+     *
+     * convert a string of integers representing Binary Tree
+     * level order traversal in Laicode style 2 into a list of
+     * Integers
+     * e.g:
+     * string : "1 2 3"
+     * tree:
+     *     1
+     *   /  \
+     *  2    3
+     *
+     *  string : "1 # 3 # 7"
+     *  tree:
+     *      1
+     *       \
+     *        3
+     *         \
+     *          7
+     *
+     * @param string
+     * @return list
+     */
     public List<Integer> stringToListII(String string) throws Exception {
         if (string == null) {
             throw new Exception("string is null");
@@ -135,10 +166,10 @@ public class TreeNode {
      * @Date: Apr.1st, 2019
      * @Email: YJianghong@gmail.com
      *
-     * Build tree according to list of Integers
+     * Build tree according to list of Integers in laicode style 1
      *
      * @param list: a list of Integers representing tree traversal in
-     *              level order, i.e. LaiCode style, with null representing
+     *              level order, i.e. LaiCode style 1, with null representing
      *              null TreeNode
      * @return TreeNode root: the root of new built tree
      * @throws Exception: throw when list is null
@@ -174,10 +205,25 @@ public class TreeNode {
 
     }
 
+
     public TreeNode buildII(String string) throws Exception {
         return buildII(stringToListII(string));
     }
 
+    /**
+     * @Author: Jianghong Ying
+     * @Date: Apr.1st, 2019
+     * @Email: YJianghong@gmail.com
+     *
+     * Build tree according to list of Integers in laicode style 2
+     *
+     * @param list: a list of Integers representing tree traversal in
+     *              level order but insert only in valid positions, skipping impossible
+     *              ones , i.e. LaiCode style 2, with # representing
+     *              null TreeNode
+     * @return TreeNode root: the root of new built tree
+     * @throws Exception: throw when list is null
+     */
     public TreeNode buildII(List<Integer> list) throws Exception {
         if (list == null) {
             throw new Exception("List is null");
