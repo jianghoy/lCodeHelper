@@ -79,8 +79,8 @@ public class NQueenWithObstacles {
             }
             x--;
         }
-        int x = newQueen.x-1;
-        int y = newQueen.y-1;
+        x = newQueen.x-1;
+        y = newQueen.y-1;
         while (x >=0 && y >= 0 ){
             if (board[x][y] == 1) {
                 return false;
@@ -91,8 +91,8 @@ public class NQueenWithObstacles {
             x--;
             y--;
         }
-        int x = newQueen.x-1;
-        int y = newQueen.y+1;
+        x = newQueen.x-1;
+        y = newQueen.y+1;
         while (x >=0 && y < board.length ){
             if (board[x][y] == 1) {
                 return false;
