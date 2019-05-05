@@ -106,7 +106,7 @@ public class NQueenWithObstacles {
         return true;
     }
 
-    class VirtualLine {
+    private class VirtualLine {
         int x;
         int s;
         int e;
